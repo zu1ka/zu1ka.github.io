@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+   <header>
+    <div class="logo"><a href="#home">ZB</a> </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="open-menu" aria-label="Open menu">
+      <i class="ri-menu-line"></i>
+    </button>
+  </header>
+ 
+
+  <aside class="sidebar hidden">
+    <button class="close-menu" aria-label="Close menu">
+      <i class="ri-close-line"></i>
+    </button>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section class="bio-section" id="home">
+      <div class="my-info">
+        <h1>Zoulkarnein Bagagnan</h1>
+        <h2>Junior Frontend Engineer</h2>
+        <p>Junior Frontend Engineer focused on building clean, responsive interfaces with HTML, CSS, and JavaScript. Currently developing portfolio projects and sharpening fundamentals in modern frontend workflows.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/zoulkarnein-bagagnan-8497b22b7/" rel="noopener noreferrer" target="_blank" class="icons" aria-label="LinkedIn">
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+          <a href="https://github.com/zu1ka" rel="noopener noreferrer" target="_blank" class="icons" aria-label="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="mailto:zoulkarneinbagagnan@gmail.com" rel="noopener noreferrer" class="icons" aria-label="Email">
+            <i class="ri-mail-line"></i>
+          </a>
+          <a href="./assets/my resume.pdf" target="_blank" rel="noopener noreferrer" class="icons" aria-label="Resume">
+            <i class="ri-file-text-line"></i>
+          </a>
+        </div>
+      </div>
+   
+      <div class="my-photo">
+        <img src="./img/Marcy-194.jpg" alt="Zoulkarnein Bagagnan">
+      </div>
+    </section>
+  
+
+    <section class="projects-section" id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <a href="https://zu1ka.github.io/greedy-pigs/" target="_blank"><img src="./img/pig-game.png" alt="Pig Game" class="project-image"></a>
+         
+          <div class="project-content">
+            <h3>Pig Game</h3>
+            <p>A responsive personal portfolio showcasing my work and skills with smooth animations and modern design.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+      
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/zu1ka/ecommerce-site" target="_blank"> <img src="./img/ecommerce.png" alt="ecommerce App" class="project-image"></a>
+       
+          <div class="project-content">
+            <h3>Ecommerce website</h3>
+            <p>A fast-paced dice game where greed can cost you everything. Roll, score, or play it safe. Just don’t roll a 1.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS Grid</span>
+              <span class="tech-tag">HTML</span>
+            </div>
+          
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/zu1ka/simple-calculator" target="_blank"><img src="./img/calculator.png" alt="calculator app" class="project-image"></a>
+          <div class="project-content">
+            <h3>Command Line Calculator</h3>
+            <p>A simple CLI-based calculator that performs basic arithmetic operations through terminal input.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Npm</span>
+            </div>
+         
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="my-stack" id="about">
+      <div class="info">
+        <h2>About Me</h2>
+        <p>Hi, I'm Zoulkarnein Bagagnan, a passionate Junior Frontend Engineer focused on building clean, responsive, and user-friendly web interfaces. I enjoy turning design ideas into functional websites using HTML, CSS, and JavaScript, and I'm constantly learning modern frontend workflows. When I'm not coding, I love exploring design trends and experimenting with new web technologies.</p>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li><i class="ri-javascript-fill icon"></i></li>
+          <li><i class="ri-html5-fill icon"></i></li>
+          <li><i class="ri-css3-fill icon"></i></li>
+          <li><i class="ri-bootstrap-fill icon"></i></li>
+          <li><i class="ri-github-fill icon"></i></li>
+          <li><i class="ri-nodejs-line icon"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+ 
+  <script src="./script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
+          <i class="ri-linkedin-box-fill"></i>
+        </a>
+        <a href="https://github.com/zu1ka/zu1ka" rel="noopener noreferrer" target="_blank" aria-label="GitHub">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="mailto:zoulkarneinbagagnan@gmail.com" rel="noopener noreferrer" aria-label="Email">
+          <i class="ri-mail-line"></i>
+        </a>
+      </div>
+      <p class="footer-text">
+        © 2026 Zoulkarnein Bagagnan. Built with passion.
+      </p>
+    </div>
+  </footer>
+</html>
