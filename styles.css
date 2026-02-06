@@ -266,7 +266,7 @@
     /* PROJECTS SECTION */
     .projects-section {
       margin-bottom: 4rem;
-      animation: fadeInUp 1s ease;
+      animation: fadeInUp 1.5s ease;
     }
 
     .projects-section h2 {
@@ -284,17 +284,18 @@
     }
 
     .project-card {
-      background-color: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: p 0.3s ease, border-color 0.3s ease;
-    }
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeInUp 1.2s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Add this line */
+}
 
-    .project-card:hover {
-      transform: translateY(-8px);
-      border-color: #52525b;
-    }
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #52525b;
+}
 
     .project-image {
       width: 100%;
